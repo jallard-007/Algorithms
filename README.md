@@ -1,2 +1,2 @@
 # Algorithms
-collection of varying algorithms
+collection of varying algorithms written in javascript
