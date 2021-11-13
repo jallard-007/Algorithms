@@ -1,23 +1,17 @@
 function rot13(str) {
-  const charArr = [];
+  let newStr = "";
   for (let i = 0; i < str.length; i++){
     if (!isLetter(str[i])){
-      charArr.push(str[i]);
+      newStr += str[i];
       continue;
     }
     let char = alphabetToNum[str[i]] + 13
     if (char > 26){
       char -= 26;
     }
-    
-    charArr.push(numToAlphabet[char]);
+    newStr += numToAlphabet[char];
   }
-  let convertedStr = "";
-  for (let i = 0; i < charArr.length; i ++){
-    convertedStr += charArr[i];
-  }
-  console.log(convertedStr)
-  return convertedStr;
+  return newStr;
 }
 
 function isLetter (char){
