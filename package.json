@@ -1,0 +1,12 @@
+{
+  "name": "algos",
+  "author": "JAllard",
+  "license": "MIT",
+  "scripts": {
+    "rot13": "node src/ROT13.js",
+    "roman": "node src/numToRomanNumeral.js"
+  },
+  "dependencies": {
+    "node": "^17.4.0"
+  }
+}
